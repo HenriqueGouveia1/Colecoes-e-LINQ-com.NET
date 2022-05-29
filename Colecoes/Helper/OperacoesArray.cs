@@ -2,7 +2,10 @@ namespace Colecoes.Helper
 {
     public class OperacoesArray
     {
-
+        public void CopiaArray(ref int[]array, ref int[] arrayDestino)
+        {
+            Array.Copy(array, arrayDestino,array.Length);
+        }
         public void OrdenarBubbleSorte(ref int[] array)
         {
             int temp = 0;

@@ -1,5 +1,20 @@
 ﻿using Colecoes.Helper;
 
+CopiarArray();
+
+static void CopiarArray()
+{   
+    OperacoesArray op3 = new OperacoesArray();
+    int[] array = new int[5] { 2, 1, 3, 4, 5 };
+    int[] arrayCopia = new int[10];
+    System.Console.WriteLine("Antes de copiar");
+    op3.ImprimirArray(array);
+    System.Console.WriteLine("Depois de copiar");
+    op3.CopiaArray(ref array, ref arrayCopia);
+    op3.ImprimirArray(arrayCopia);
+}
+
+
 static void ArraySort()
 {
     OperacoesArray op2 = new OperacoesArray();
