@@ -2,6 +2,11 @@ namespace Colecoes.Helper
 {
     public class OperacoesArray
     {
+        public bool ExisteElemento(int[]array, int valor)
+        {
+            return Array.Exists(array, elemento => elemento == valor);
+        }
+
         public void CopiaArray(ref int[]array, ref int[] arrayDestino)
         {
             Array.Copy(array, arrayDestino,array.Length);

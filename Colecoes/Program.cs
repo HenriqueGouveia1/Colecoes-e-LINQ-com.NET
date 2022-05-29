@@ -1,6 +1,24 @@
 ﻿using Colecoes.Helper;
 
-CopiarArray();
+ExisteOElemento();
+
+static void ExisteOElemento()
+{
+    OperacoesArray op4 = new OperacoesArray();
+    int[] array = new int[5] { 2, 1, 3, 4, 5 };
+
+    var iExiste = 1;
+    var existe = op4.ExisteElemento(array, iExiste);
+
+    if (existe)
+    {
+        System.Console.WriteLine($"O valor {iExiste} existe");
+    }
+    else
+    {
+        System.Console.WriteLine($"O valor {iExiste} não existe");
+    }
+}
 
 static void CopiarArray()
 {   
