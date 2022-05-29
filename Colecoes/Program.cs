@@ -1,6 +1,8 @@
 ﻿using Colecoes.Helper;
 
-static void ImprimeBubble()
+BubbleEimprime();
+
+static void BubbleEimprime()
 {
     OperacoesArray op = new OperacoesArray();
     int[] array = new int[5] { 2, 1, 3, 4, 5 };
