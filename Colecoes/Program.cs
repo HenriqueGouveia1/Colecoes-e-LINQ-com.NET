@@ -8,7 +8,7 @@ static void CopiarArray()
     int[] array = new int[5] { 2, 1, 3, 4, 5 };
     int[] arrayCopia = new int[10];
     System.Console.WriteLine("Antes de copiar");
-    op3.ImprimirArray(array);
+    op3.ImprimirArray(arrayCopia);
     System.Console.WriteLine("Depois de copiar");
     op3.CopiaArray(ref array, ref arrayCopia);
     op3.ImprimirArray(arrayCopia);
