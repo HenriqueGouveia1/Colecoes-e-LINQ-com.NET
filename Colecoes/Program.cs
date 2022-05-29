@@ -1,6 +1,14 @@
 ﻿using Colecoes.Helper;
 
-BubbleEimprime();
+static void ArraySort()
+{
+    OperacoesArray op2 = new OperacoesArray();
+    int[] array = new int[5] { 2, 1, 3, 4, 5 };
+    op2.ImprimirArray(array);
+
+    op2.OrdenarArraySort(ref array);
+    op2.ImprimirArray(array);
+}
 
 static void BubbleEimprime()
 {
